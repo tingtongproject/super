@@ -1,5 +1,7 @@
 {
   "name": "tingtong",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
