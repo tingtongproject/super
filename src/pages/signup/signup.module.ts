@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
 import { IonicPageModule } from 'ionic-angular';
-
 import { SignupPage } from './signup';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,10 +9,8 @@ import { SignupPage } from './signup';
   ],
   imports: [
     IonicPageModule.forChild(SignupPage),
-    TranslateModule.forChild()
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  exports: [
-    SignupPage
-  ]
 })
-export class SignupPageModule { }
+export class SignupPageModule {}
