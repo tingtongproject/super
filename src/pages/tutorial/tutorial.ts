@@ -18,6 +18,7 @@ export class TutorialPage {
   slides: Slide[];
   showSkip = true;
   dir: string = 'ltr';
+  splash = true
 
   constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform) {
     this.dir = platform.dir();
@@ -34,17 +35,17 @@ export class TutorialPage {
           {
             title: values.TUTORIAL_SLIDE1_TITLE,
             description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-1.png',
+            image: 'assets/salon.png',
           },
           {
             title: values.TUTORIAL_SLIDE2_TITLE,
             description: values.TUTORIAL_SLIDE2_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-2.png',
+            image: 'assets/pest.png',
           },
           {
             title: values.TUTORIAL_SLIDE3_TITLE,
             description: values.TUTORIAL_SLIDE3_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-3.png',
+            image: 'assets/air.png',
           }
         ];
       });
@@ -70,5 +71,11 @@ export class TutorialPage {
     // enable the root left menu when leaving the tutorial page
     this.menu.enable(true);
   }
-
+  ionViewDidLoad(){
+    setTimeout(() => this.splash = false, 4000);
 }
+}
+
+
+
+// Book beauty parlour services at home from Housejoy. Get pampered by certified beauty salon professionals at the comfort of your home. 
