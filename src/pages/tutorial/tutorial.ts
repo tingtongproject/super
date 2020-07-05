@@ -18,6 +18,7 @@ export class TutorialPage {
   slides: Slide[];
   showSkip = true;
   dir: string = 'ltr';
+  splash = true
 
   constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform) {
     this.dir = platform.dir();
@@ -70,5 +71,7 @@ export class TutorialPage {
     // enable the root left menu when leaving the tutorial page
     this.menu.enable(true);
   }
-
+  ionViewDidLoad(){
+    setTimeout(() => this.splash = false, 4000);
+}
 }
