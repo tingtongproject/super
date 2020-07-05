@@ -3,6 +3,7 @@
 $font-path: "../assets/fonts";
 
 @import "ionic.globals";
+@import 'intl-tel-input-mobile/build/css/intlTelInput.css';
 
 
 // Shared Variables
@@ -77,3 +78,10 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+.action-sheet-title{
+  background:#8e175aff;
+  color:white !important;
+}
+.action-sheet-md .action-sheet-group:first-child{
+padding: 0px !important;
+}
