@@ -24,11 +24,11 @@ export class OtpVerificationPage {
   resend=false;
   interval;
   constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController,) {
-    this.startTimer(2);
+    this.startTimer(1);
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad OtpVerificationPage');
+
   }
 
   onOtpChange(otp) {
@@ -53,7 +53,7 @@ export class OtpVerificationPage {
     --this.timer;
     if(this.timer<0){
       this.resend=true
-      this.timevalue='0.00'
+      this.timevalue='0:00'
     }
   }
   resendOtp(){
@@ -75,6 +75,9 @@ export class OtpVerificationPage {
     }
       
   }
+  pop(){
+    this.navCtrl.setRoot('SignupPage');
+}
 
 }
 
