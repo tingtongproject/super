@@ -1,14 +1,10 @@
 page-registration {
-    ion-select {
-        /* Applies to the value and placeholder color */
-        color: #545ca7;
+   
+      .action-sheet-title {
+        background: #8e175a !important;
+        color: white !important;
+    }
       
-        /* Set a different placeholder color */
-        --placeholder-color: #971e49;
-      
-        /* Set full opacity on the placeholder */
-        --placeholder-opacity: 1;
-      }
       ion-action-sheet {
         ion-icon {
           width: 3rem;
