@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { OtpVerificationPage } from './otp-verification';
+
 import { NgOtpInputModule } from  'ng-otp-input';
+import { OtpVerificationPage } from './otp-verification';
 
 @NgModule({
   declarations: [
-    OtpVerificationPage,
+    OtpVerificationPage
   ],
   imports: [
     IonicPageModule.forChild(OtpVerificationPage),

@@ -69,7 +69,7 @@ page-tutorial {
     width: 50%;
     height: auto;
     animation: animation 8100ms linear infinite both;
-    animation-delay: 1s;
+    animation-delay: 20000000s;
   }
 
 
@@ -80,5 +80,11 @@ page-tutorial {
     100% {
       opacity:1;
     }
+  }
+
+  .imground
+  {
+    border-radius: 50% !important;
+    width:100px;
   }
 }
