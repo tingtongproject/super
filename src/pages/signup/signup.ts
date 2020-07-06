@@ -16,7 +16,8 @@ import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 export class SignupPage {
   form: FormGroup;
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    public navCtrl: NavController
     ) {
       this.form = this.formBuilder.group(
         {
@@ -31,6 +32,11 @@ export class SignupPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignupPage');
 
+  }
+
+  skip()
+  {
+    this.navCtrl.setRoot('TutorialPage');
   }
 
 

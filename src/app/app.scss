@@ -36,4 +36,15 @@ ion-action-sheet {
     .ion-ios-arrow-round-up:before {
       content: "";
   }
+
+  .ion-md-arrow-round-up
+  {
+    background-repeat: round;
+    background-image: url(https://cdn.webshopapp.com/shops/94414/files/54025310/india-flag-icon-free-download.jpg) !important;
+    margin-left: -80px;
+  }
+
+  .ion-md-arrow-round-up:before {
+    content: "";
+}
 }

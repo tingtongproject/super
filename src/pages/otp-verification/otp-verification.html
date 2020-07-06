@@ -6,16 +6,16 @@
 -->
 
 <ion-content padding>
-  <ion-buttons left>
-        <ion-icon style="color: #ef3c2e;"name="arrow-back"  (click)="pop()"></ion-icon>   
-</ion-buttons>
+ 
+        <ion-icon (click)="pop()"   style="color: #8e175aff" name="arrow-back"></ion-icon>   
+
 <div class="top40">
   <h1 class="top40">Enter the OTP</h1>
   <p style="color: #848d95;" class="top40">We have sent you a 4 digit verification code in the given mobile number </p>
   <ng-otp-input  (onInputChange)="onOtpChange($event)"  [config]="{length:4}"></ng-otp-input>
-  <p>{{timevalue||async}}<p>
-  <div *ngIf="resend">
- <button ion-button class="top40" color="primary" (click)="resendOtp()" round>Resend</button>
+  <p class="top40"  *ngIf="!resend">{{timevalue||async}}<p>
+  <div *ngIf="resend" class="top40" >
+ <button ion-button color="primary" (click)="resendOtp()" round>Resend</button>
 </div>
 <button class="top40" ion-button full rounded color="primary" round (click)="verifyOtp()">Proceed</button>
 

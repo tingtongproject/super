@@ -52,7 +52,7 @@ export class TutorialPage {
   }
 
   startApp() {
-    this.navCtrl.setRoot('WelcomePage', {}, {
+    this.navCtrl.setRoot('RegistrationPage', {}, {
       animate: true,
       direction: 'forward'
     });
