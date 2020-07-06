@@ -33,16 +33,13 @@ image:any;
      
       buttons: [{
         text: 'India(+91)',
-       // role: 'destructive',
-       icon: 'indiaflag',
-     //  cssClass:"class_used_img",
+       icon: 'arrow-round-up',
         handler: () => {
          this.country = '+91'
           console.log(item);
         }
       },{
         text: 'Cancel',
-        icon: 'close',
         role: 'cancel',
         handler: () => {
           console.log('Cancel clicked');

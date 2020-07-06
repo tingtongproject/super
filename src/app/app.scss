@@ -25,8 +25,15 @@ ion-action-sheet {
       content: url(../assets/icon/trash-solid.svg);
     }
   
-    .ion-share-alt-square-solid,
+    .ion-ios-arrow-round-up
     {
-      content: url(../assets/imgs/indiaflag.png);
+      background-repeat: round;
+      background-image: url(https://cdn.webshopapp.com/shops/94414/files/54025310/india-flag-icon-free-download.jpg) !important;
+      margin-left: -80px;
+    position: absolute;
     }
+
+    .ion-ios-arrow-round-up:before {
+      content: "";
+  }
 }
