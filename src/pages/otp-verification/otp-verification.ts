@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import {BehaviorSubject}  from "rxjs";
 import { MainPage } from '..';
+import { SignupPage } from '../signup/signup';
 
 /**
  * Generated class for the OtpVerificationPage page.
@@ -17,7 +18,7 @@ import { MainPage } from '..';
 })
 export class OtpVerificationPage {
 
-  otp: string;
+  otp: string=""
   time:BehaviorSubject<string> = new BehaviorSubject('00:00')
   timer:number
   timevalue=""
@@ -63,7 +64,7 @@ export class OtpVerificationPage {
   }
   verifyOtp(){
     if(this.otp.length==4 && this.otp=="1234"){
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push('SignupPage');
     }
     else{
       let toast = this.toastCtrl.create({
@@ -76,7 +77,7 @@ export class OtpVerificationPage {
       
   }
   pop(){
-    this.navCtrl.setRoot('SignupPage');
+    this.navCtrl.setRoot('RegistrationPage');
 }
 
 }

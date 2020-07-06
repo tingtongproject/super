@@ -13,7 +13,7 @@
   table {
     border-collapse: collapse;
   }
-  .nextButton {
+  .bottom {
     position: fixed;
     left: 0;
     bottom: 0px;
@@ -23,6 +23,16 @@
 .top40
 {
     margin-top: 40px;
+    text-align: center;
+}
+
+.button-round {
+  border-radius: 5px;
+  padding: 0 2.6rem;
+}
+
+.otp-input[_ngcontent-c0] {
+  border-radius: 14px;
 }
 
 

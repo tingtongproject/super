@@ -49,5 +49,9 @@ image:any;
     await actionSheet.present();
   }
 
+  sendOtp(){
+    this.navCtrl.push('OtpVerificationPage')
+  }
+
 
 }

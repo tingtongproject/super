@@ -9,15 +9,15 @@
   <ion-buttons left>
         <ion-icon style="color: #ef3c2e;"name="arrow-back"  (click)="pop()"></ion-icon>   
 </ion-buttons>
-<div  style="text-align: center;">
-  <h1 style="margin-top: 5vh;">Enter the OTP</h1>
-  <p style="color: #848d95;">We have sent you a 4 digit verification code in the given mobile number </p>
+<div class="top40">
+  <h1 class="top40">Enter the OTP</h1>
+  <p style="color: #848d95;" class="top40">We have sent you a 4 digit verification code in the given mobile number </p>
   <ng-otp-input  (onInputChange)="onOtpChange($event)"  [config]="{length:4}"></ng-otp-input>
   <p>{{timevalue||async}}<p>
   <div *ngIf="resend">
- <button ion-button color="positiveButton" (click)="resendOtp()">Resend</button>
+ <button ion-button class="top40" color="primary" (click)="resendOtp()" round>Resend</button>
 </div>
-<button class="top40" ion-button full rounded color="primary" round (click)="verifyOtp()">Next</button>
+<button class="top40" ion-button full rounded color="primary" round (click)="verifyOtp()">Proceed</button>
 
 </div>
 </ion-content>
