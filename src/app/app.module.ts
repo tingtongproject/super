@@ -15,6 +15,7 @@ import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
 
 
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function createTranslateLoader(http: HttpClient) {
@@ -43,6 +44,7 @@ export function provideSettings(storage: Storage) {
   imports: [
     BrowserModule,
     HttpClientModule,
+
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
